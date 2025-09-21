@@ -55,7 +55,7 @@ document.getElementById('botao-tema')?.addEventListener('click', () => {
 (function corrigirScrollComCabecalho() {
     const ids = ['inicio', 'sobre', 'projetos', 'contato'];
     const cabecalho = document.querySelector('.cabecalho');
-    const altura = () => (cabecalho?.offsetHeight || 80) + 16;
+    const altura = () => (cabecalho?.offsetHeight || 80) - 50;
 
     ids.forEach(id => {
         const el = document.getElementById(id);
